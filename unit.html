@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        font-size: 12px;
+        margin:0;
+        padding:0;
+        }
+        /*h1{
+            font-size: 3em;
+            background-color: rgb(110,78,78);
+            } */
+        h2{
+            font-size: 1.5em;
+            background-color: #3e9b87;
+            }
+        p{
+            background-color: rgb(163, 127, 61);
+        }
+         body{
+            background-image: url('./images/캡처.PNG');
+            background-repeat: no-repeat;
+            /* background-size: 100%; */
+            background-color: orange;
+            background-position: bottom;
+            }
+        #box {
+            /* display: inline-block; */
+            visibility: visible;
+            background-color: red;
+            width:300px; height:50px;
+            margin: 10px;
+
+            color: black;
+            opacity:0.5;
+
+        }
+        table{
+            visibility: collapse;
+        }
+        #attr{
+            width: 100px; height: 100px;
+            background-color: red;
+            border: 20px solid black;
+            margin: 0 30px; padding:0 30px;
+            color: black;
+        }
+        div#box1{
+            background-color: red;
+            box-sizing: content-box;
+            margin: 10px; padding: 10px;
+            width: 100px; height: 100px;
+            border: 10px solid black;
+            border-width: solid;
+            border-style: dashed;
+            border-radius: 20px;
+        }
+        
+        div#box2{
+            background: blue;
+            box-sizing: border-box;
+            margin: 10px; padding: 10px;
+            width: 100px; height: 100px;
+            border: 10px solid black;
+        }
+        .font_arial{font-family:'없는 폰트',sans-seif; font-weight:bold;}
+        .font_roman{font-family:'없는 폰트',serif; font-weight:bold;}
+        .font_big {font-size: 2em;}
+        .font_italic {font-style: italic;}
+        .font_bold {font-weight:bold;}
+        .font_center{text-align:center;}
+        .font_right{text-align:right;}
+
+        .button {
+            width: 150px;
+            height: 70px;
+            background-color: #ff6a00;
+            border: 10px solid #ffffff;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px #a9a9a9;
+        }
+        .button > a {
+            display: block;
+            line-height:70px;
+        }
+        a{text-decoration:none;}
+        .box{
+            width:100px; height: 100px;
+            position:absolute;
+
+        }
+        body > div{
+            width: 400px; height: 100px;
+            border: 3px solid black;
+
+            position: relative;
+            overflow: hidden;
+
+        }
+        .red{background-color: red; left:10px; top:10px; z-index: 100;}
+        .green{background-color: green; left: 50px; top: 50px; z-index: 10;}
+        .blue{background-color: blue; left: 90px; top:90px; z-index: 1;}
+    </style>
+</head>
+<body>
+    <hr>
+    <h1 class="font_arial">Lorem ipsum</h1>
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <h1 class="font_arial">Lorem ipsum</h1>
+    hr
+    <div class="button">
+        <a href="#" class="font_big font_italic font_bold font_center">Click</a>
+    </div>
+    <h1 class="font_arial">Lorem ipsum</h1>
+    <p class="font_roman">Lorem ipsum</p>
+    <p class="font_bold font_right">2020.11.30</p>
+    <hr>
+    <div id="box1">box1 Lorem ipsum dolor sit amet</div>
+    <div id="box2">box2 Lorem ipsum dolor sit amet</div>
+    <span>Dummy</span>
+    <div id="box"><span>Lorem ipsum dolor sit amet</span></div>
+    <span>Dummy</span>
+    <table>
+        <tr>
+            <td>Test</td>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+            <td>Test</td>
+        </tr>
+        <tr>
+            <td>Test</td>
+            <td>Test</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- <h1>Lorem ipsum dolor site amet</h1>
+    <h2>ipsum dolor site amet</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
+</body>
+</html>
